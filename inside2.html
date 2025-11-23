@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>South Indian</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .logo {
+            height: 70px;
+            width: 90px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: #f02c2c;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .category-btn {
+            background-color: #f02c2c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .category-btn:hover {
+            background-color: #d62626;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f5f5f5;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 8px;
+            padding: 10px 0;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 28px;
+            color: #d62626;
+        }
+
+        
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap; /* allows wrapping for smaller screens */
+        }
+
+        
+        .product-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        
+        .product-card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 280px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product-card h2 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            color: #f02c2c;
+        }
+
+        .product-card h3 {
+            font-size: 14px;
+            color: #333;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="header">
+        <h1>South Indian</h1>
+        <div class="dropdown">
+            <button class="category-btn">Category</button>
+            <div class="dropdown-content">
+                <a href="#">Dosa</a>
+                <a href="#">Idli</a>
+                <a href="#">Medu Vada</a>
+		<a href="#">Rava Uttapam</a>
+            </div>
+        </div>
+    </div>
+
+    <img class="logo" src="C:\Users\diyah\OneDrive\Documents\JAVA SCRIPT\Restaurant Logos.jpg">
+
+    <h1 class="section-title">Our South Indian Recipes</h1>
+    <img src="https://www.easeindiatrip.com/blog/wp-content/uploads/2025/05/South-India-Famous-Food.jpg" width="100%" style="border-radius:10px;">
+    <div class="main-container">
+
+    
+        <div class="product-container">
+            <div class="product-card">
+                <h2>Dosa</h2>
+                <img src="https://images.livemint.com/img/2021/07/05/original/crispy-dosa-temple-recipe_1625469413436.jpg">
+                <h3>To make Dosa, soak 1 cup rice and ½ cup urad dal separately for about 4–6 hours. Grind them into a smooth batter, mix together, and let it ferment overnight. Add salt and mix well. Heat a non-stick pan, pour a ladle of batter, and spread it thin in a circular motion. Drizzle a little oil around the edges and cook until golden and crisp. Serve hot with chutney and sambar.</h3>    
+	</div>
+        </div>
+
+       
+        <div class="product-container">
+            <div class="product-card">
+                <h2>Idli</h2>
+                <img src="https://i.pinimg.com/736x/25/11/ae/2511aea623ba7893f6401be65b835f7b.jpg">
+                <h3>To make Idli, soak 1 cup rice and ½ cup urad dal separately for 4–6 hours. Grind them into a smooth batter, mix together, and let it ferment overnight. Add salt and stir well. Grease the idli molds, pour the batter, and steam for about 10–12 minutes until soft and fluffy. Serve hot with chutney and sambar.</h3>
+            </div>
+        </div>
+
+        
+        <div class="product-container">
+            <div class="product-card">
+                <h2>Medu Vada</h2>
+                <img src="https://i.pinimg.com/736x/7c/25/06/7c25062db19fcdb416f9fdc2ee743da5.jpg">
+                <h3>To make Medu Vada, soak urad dal for 4–5 hours, then grind it into a thick, smooth batter. Add salt, chopped onions, green chilies, and curry leaves. Shape into rings and deep-fry until golden and crisp. Serve hot with chutney and sambar.</h3>
+            </div>
+        </div>
+
+        
+        <div class="product-container">
+            <div class="product-card">
+                <h2>Rava Uttapam</h2>
+                <img src="https://www.honeywhatscooking.com/wp-content/uploads/2022/06/Rava-Uttapam12.jpg">
+                <h3>To make Rava Uttapam, mix 1 cup semolina (rava) with curd and water to form a thick batter, then rest it for 15 minutes. Add salt, chopped onions, tomatoes, and green chilies. Pour batter onto a hot pan, spread slightly, and cook until golden on both sides. Serve hot with chutney.</h3>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

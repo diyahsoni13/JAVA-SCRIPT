@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Popup Recipe</title>
+
+<style>
+    body {
+        font-family: Arial;
+        background: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Recipe Button */
+    .recipe-btn {
+        background: #ff914d;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    /* Popup Background */
+    .popup-bg {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    /* Popup Box */
+    .popup-box {
+        background: white;
+        width: 350px;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        text-align: left;
+    }
+
+    .popup-box h2 {
+        margin-top: 0;
+    }
+
+    /* Close Button */
+    .close-btn {
+        background: #ff4d4d;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 6px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Recipe Book</h1>
+<button class="recipe-btn" onclick="openPopup()">Open Recipe</button>
+
+<!-- Popup -->
+<div class="popup-bg" id="popup">
+    <div class="popup-box">
+        <h2>Pizza Recipe</h2>
+        <p><b>Ingredients:</b></p>
+        <ul>
+            <li>2 cups flour</li>
+            <li>1 cup cheese</li>
+            <li>Pizza sauce</li>
+            <li>Veg toppings</li>
+        </ul>
+
+        <p><b>Steps:</b></p>
+        <p>
+            1. Prepare the dough.<br>
+            2. Spread sauce.<br>
+            3. Add cheese and toppings.<br>
+            4. Bake for 15 minutes.
+        </p>
+
+        <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<script>
+    function openPopup() {
+        document.getElementById("popup").style.display = "flex";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
